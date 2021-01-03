@@ -60,12 +60,14 @@ class User extends Authenticatable
      {
          return $this->hasMany(Photo::class);
      }
+
      //Renvoi les user apparaissant sur la photo
      public function photosAppearance()
      {
         return $this->belongsToMany(Photo::class)->using(PhotoUser::class)->withPivot("id")->withTimestamps();;
 
      }
+     
      // renvoi les user du groupe
      public function groups()
      {

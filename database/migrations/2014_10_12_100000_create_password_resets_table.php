@@ -14,7 +14,7 @@ class CreatePasswordResetsTable extends Migration
     public function up()
     {
         Schema::create('password_resets', function (Blueprint $table) {
-            $table->string('email')->index();//email pour le reset du password
+            $table->string('email')->index();// Email pour le reset du password
             $table->string('token');
             $table->timestamp('created_at')->nullable();
         });

@@ -15,8 +15,8 @@ class Groups extends Migration
     {
         Schema::create('groups', function (Blueprint $table) {
             $table->id();
-            $table->string("name"); // nom du groupe
-            $table->text("description");//description du groupe
+            $table->string("name"); // Nom du groupe
+            $table->text("description");// Description du groupe
             $table->timestamps();
         });
     }

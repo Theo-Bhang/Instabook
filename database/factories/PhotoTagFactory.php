@@ -24,8 +24,8 @@ class PhotoTagFactory extends Factory
     public function definition()
     {
         return [
-            'photo_id' => Photo::factory(), //id de la photo
-            'tag_id' => Tag::factory(),//id du tag
+            'photo_id' => Photo::factory(), // id de la photo
+            'tag_id' => Tag::factory(),// id du tag
             'created_at' => now(),
             'updated_at' => now(),
         ];

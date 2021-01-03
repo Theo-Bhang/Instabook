@@ -14,10 +14,10 @@ class GroupUser extends Migration
     public function up()
     {
         Schema::create('group_user', function (Blueprint $table) {
-            $table->id(); //id group user 
-            $table->foreignId("group_id")->constrained()->cascadeOnDelete();//clé etrangere group id
-            $table->foreignId("user_id")->constrained()->cascadeOnDelete();//clé etrangere user id
-            $table->unique(["group_id", "user_id"]);// on rend unique les clés etrangeres 
+            $table->id(); // Id group user 
+            $table->foreignId("group_id")->constrained()->cascadeOnDelete();// Clé etrangere group id
+            $table->foreignId("user_id")->constrained()->cascadeOnDelete();// Clé etrangere user id
+            $table->unique(["group_id", "user_id"]);// On rend unique les clés etrangeres 
             $table->timestamps();
         });
     }

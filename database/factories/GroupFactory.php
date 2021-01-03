@@ -23,7 +23,7 @@ class GroupFactory extends Factory
     {
         return [
             'name' => $this->faker->word, // nom du groupe
-            'description' => $this->faker->sentence(), //description du groupe
+            'description' => $this->faker->sentence(), // description du groupe
             'created_at' => now(),
             'updated_at' => now(),
         ];

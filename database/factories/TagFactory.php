@@ -22,7 +22,7 @@ class TagFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->word(),//nom du tag
+            'name' => $this->faker->word(),// Nom du tag
             'created_at' => now(),
             'updated_at' => now(),
         ];

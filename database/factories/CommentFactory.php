@@ -24,10 +24,10 @@ class CommentFactory extends Factory //Factorie
     public function definition()
     {
         return [
-            'user_id' => User::factory(),//id user
-            'photo_id' => Photo::factory(),//id photo
-            'text' => $this->faker->text,//text du comment de la photo
-            'comment_id' => null,//id du comment
+            'user_id' => User::factory(),// id user
+            'photo_id' => Photo::factory(),// id photo
+            'text' => $this->faker->text,// text du comment de la photo
+            'comment_id' => null,// id du comment
             'created_at' => now(),
             'updated_at' => now(),
         ];

@@ -24,8 +24,8 @@ class PhotoUserFactory extends Factory
     public function definition()
     {
         return [
-            'photo_id' => Photo::factory(), //Id de la photo
-            'user_id' => User::factory(),//Id du user
+            'photo_id' => Photo::factory(), // Id de la photo
+            'user_id' => User::factory(),// Id du user
             'created_at' => now(),
             'updated_at' => now(),
         ];

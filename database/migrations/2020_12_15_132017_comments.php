@@ -15,10 +15,10 @@ class Comments extends Migration
     {
         Schema::create('comments', function (Blueprint $table) {
             $table->id();
-            $table->text("text");//texte du commentaire
-            $table->foreignId("photo_id");//clé etrangere photo id
-            $table->foreignId("comment_id")->nullable()->constrained()->onDelete("set null");//clé etrangere comment id qui peut etre null
-            $table->foreignId("user_id")->nullable()->constrained()->onDelete("set null"); //clé etrangere user id qui peut etre null
+            $table->text("text");// Texte du commentaire
+            $table->foreignId("photo_id");// Clé etrangere photo id
+            $table->foreignId("comment_id")->nullable()->constrained()->onDelete("set null");// Clé etrangere comment id qui peut etre null
+            $table->foreignId("user_id")->nullable()->constrained()->onDelete("set null"); // Clé etrangere user id qui peut etre null
             $table->timestamps();
         });
     }

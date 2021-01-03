@@ -14,10 +14,10 @@ class PhotoUser extends Migration
     public function up()
     {
         Schema::create('photo_user', function (Blueprint $table) {
-            $table->id(); // id photo user
-            $table->foreignId("photo_id")->constrained()->onDelete("cascade");//clé etrangere photo id
-            $table->foreignId("user_id")->constrained()->onDelete("cascade");//clé etrangere user id
-            $table->unique(["photo_id", "user_id"]);// on rend unique les clés etrangeres
+            $table->id(); // Id photo user
+            $table->foreignId("photo_id")->constrained()->onDelete("cascade");// Clé etrangere photo id
+            $table->foreignId("user_id")->constrained()->onDelete("cascade");// Clé etrangere user id
+            $table->unique(["photo_id", "user_id"]);// On rend unique les clés etrangeres
             $table->timestamps();
         });
     }

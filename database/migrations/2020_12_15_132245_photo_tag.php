@@ -14,10 +14,10 @@ class PhotoTag extends Migration
     public function up()
     {
         Schema::create('photo_tag', function (Blueprint $table) {
-            $table->id();// id photo  tag
-            $table->foreignId("photo_id")->constrained()->cascadeOnDelete();//clé etrangere photo id
-            $table->foreignId("tag_id")->constrained()->cascadeOnDelete();//clé etrangere tag id
-            $table->unique(["photo_id", "tag_id"]);// on rend unique les clés etrangeres 
+            $table->id();// Id photo  tag
+            $table->foreignId("photo_id")->constrained()->cascadeOnDelete();// Clé etrangere photo id
+            $table->foreignId("tag_id")->constrained()->cascadeOnDelete();// Clé etrangere tag id
+            $table->unique(["photo_id", "tag_id"]);// On rend unique les clés etrangeres 
             $table->timestamps();
         });
     }

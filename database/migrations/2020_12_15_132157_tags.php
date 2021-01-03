@@ -14,8 +14,8 @@ class Tags extends Migration
     public function up()
     {
         Schema::create('tags', function (Blueprint $table) {
-            $table->id();// tag id
-            $table->string("name");// le nom du tag
+            $table->id();// Tag id
+            $table->string("name");// Le nom du tag
             $table->timestamps();
         });
     }

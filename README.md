@@ -10,4 +10,4 @@ Pour le TP Instabook :
 --En effet lors des TP Laravel il m'étais arrivé la même erreur mais je n'arrive pas a retrouver comment m'en débarraser.
 --J'aimerais lors de la correction une petite apparthée sur ce point si possible.
 
--- Pour résumer, si ce TP était sur une échelle de 1 à 10 je le mettrais vers les 6 ou 7. Le probleme cité ci dessus m'a handicapé sur la fin du rendu mais pour autant je n'ai pas eu de grande difficultés
+-- Pour résumer, si ce TP était sur une échelle de 1 à 10 je le mettrais vers les 6 ou 7. Le probleme cité ci dessus m'a handicapé sur la fin du rendu mais pour autant je n'ai pas eu de grande difficultés.

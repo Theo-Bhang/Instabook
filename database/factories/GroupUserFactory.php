@@ -24,8 +24,8 @@ class GroupUserFactory extends Factory
     public function definition()
     {
         return [
-            'user_id' => User::factory(), //id user
-            'group_id' => Group::factory(),//id group
+            'user_id' => User::factory(), // id user
+            'group_id' => Group::factory(),// id group
             'created_at' => now(),
             'updated_at' => now(),
         ];

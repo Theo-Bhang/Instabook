@@ -35,11 +35,13 @@ class Comment extends Model
      {
          return $this->belongsTo(User::class);
      }
+
      //Renvoi les reponses des users au comment
     public function replyTo()
      {
         return $this->belongsTo(Comment::class,'comment_id','id');
      }
+     
      //Renvoi les reponses aux comment
     public function replies()
      {

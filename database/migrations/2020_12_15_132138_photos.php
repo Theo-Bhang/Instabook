@@ -14,16 +14,16 @@ class Photos extends Migration
     public function up()
     {
         Schema::create('photos', function (Blueprint $table) {
-            $table->id(); //photo id
-            $table->string("title");//titre de la photo
-            $table->text("description");//description de la photo
-            $table->date("date")->nullable();//date de la photo facultatif
-            $table->string("file");//le chemin du fichier de la photo
-            $table->integer("resolution")->nullable();//int de la resolution facultatif            
-            $table->integer("width");//largeur de la photo
-            $table->integer("height");//hauteur de la photo
-            $table->foreignId("user_id")->nullable()->constrained()->onDelete("set null");//clé etrangere user id facultative et qui lors de sa suppression deviens null
-            $table->foreignId("group_id")->constrained()->onDelete("cascade"); //cle etrangere group id
+            $table->id(); // Photo id
+            $table->string("title");// Titre de la photo
+            $table->text("description");// Description de la photo
+            $table->date("date")->nullable();// Date de la photo facultatif
+            $table->string("file");// Le chemin du fichier de la photo
+            $table->integer("resolution")->nullable();// Int de la resolution facultatif            
+            $table->integer("width");// Largeur de la photo
+            $table->integer("height");// Hauteur de la photo
+            $table->foreignId("user_id")->nullable()->constrained()->onDelete("set null");// Clé etrangere user id facultative et qui lors de sa suppression deviens null
+            $table->foreignId("group_id")->constrained()->onDelete("cascade"); // Clé etrangere group id
             $table->timestamps();
         });
     }
